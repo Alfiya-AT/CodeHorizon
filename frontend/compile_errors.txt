@@ -1,0 +1,64 @@
+
+> frontend@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/app/auth/login/page.tsx
+28:23  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/auth/register/page.tsx
+29:23  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/courses/page.tsx
+10:46  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+23:52  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+26:52  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+90:41  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/courses/[subjectId]/page.tsx
+15:44  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+16:38  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+52:59  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+73:67  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+146:33  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+235:86  Error: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+263:60  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+266:95  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+287:76  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/page.tsx
+19:44  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+124:23  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/app/profile/page.tsx
+13:46  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+14:50  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+22:32  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+27:30  Error: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+66:39  Error: 'hasStarted' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/common/Button.tsx
+7:59  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/Layout/AppShell.tsx
+26:37  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/Layout/CourseSidebar.tsx
+17:13  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+26:11  Error: 'progressPercent' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/Video/VideoMeta.tsx
+11:12  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/store/sidebarStore.ts
+51:48  Error: '_' is defined but never used.  @typescript-eslint/no-unused-vars
+51:51  Error: 'arr' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
