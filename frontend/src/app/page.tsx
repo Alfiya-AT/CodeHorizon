@@ -29,7 +29,7 @@ export default function Home() {
     <AppShell>
       {/* Hero Section */}
       <section className="relative w-full overflow-hidden flex flex-col justify-center min-h-[600px] border-b border-surface-border/50">
-        {/* Background abstract layer matching OnlineGuru blur / gradients */}
+        {/* Background abstract layer matching CodeHorizon blur / gradients */}
         <div className="absolute inset-0 bg-background overflow-hidden z-0">
           <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-brand-accent/20 rounded-full mix-blend-screen filter blur-[100px] opacity-60"></div>
           <div className="absolute bottom-[20%] right-[10%] w-[600px] h-[600px] bg-[#f97316]/10 rounded-full mix-blend-screen filter blur-[120px] opacity-40"></div>
@@ -38,7 +38,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 z-10 flex flex-col items-center justify-center text-center">
           <div className="bg-surface-card/60 backdrop-blur-xl border border-surface-border p-12 md:p-16 rounded-3xl shadow-2xl max-w-4xl">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight tracking-tight">
-              Unlock Your Potential with OnlineGuru
+              Unlock Your Potential with CodeHorizon
             </h1>
             <p className="text-lg md:text-xl text-text-secondary mb-10 font-sans max-w-2xl mx-auto">
               Join 100,000+ learners mastering in-demand skills through expertly crafted courses and hands-on projects.
@@ -55,11 +55,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose OnlineGuru Features */}
+      {/* Why Choose CodeHorizon Features */}
       <section className="bg-background py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-center text-foreground mb-16">
-            Why Choose <span className="text-brand-accent">OnlineGuru?</span>
+            Why Choose <span className="text-brand-accent">CodeHorizon?</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -109,7 +109,7 @@ export default function Home() {
                       <img src={subject.thumbnailUrl} alt={subject.title} className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-900">
-                        <span className="text-brand-accent/50 font-display font-bold text-2xl">OnlineGuru</span>
+                        <span className="text-brand-accent/50 font-display font-bold text-2xl">CodeHorizon</span>
                       </div>
                     )}
                     <div className="absolute top-4 left-4 bg-[#f97316] text-white text-[11px] font-bold px-3 py-1 rounded shadow-lg uppercase tracking-wider flex items-center gap-1">

@@ -10,7 +10,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             <header className="h-[72px] border-b border-surface-border bg-background/80 backdrop-blur-md flex items-center justify-between px-6 shrink-0 z-50 sticky top-0 transition-all">
                 <Link href="/" className="font-display font-extrabold text-2xl tracking-tight text-brand-accent flex items-center gap-2">
                     <GraduationCap className="w-8 h-8 text-brand-accent" />
-                    OnlineGuru
+                    CodeHorizon
                 </Link>
 
                 <div className="hidden md:flex items-center gap-8 text-[15px] font-medium text-text-secondary">
@@ -57,7 +57,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     <div>
                         <Link href="/" className="font-display font-extrabold text-2xl text-brand-accent flex items-center gap-2 mb-4">
                             <GraduationCap className="w-8 h-8" />
-                            OnlineGuru
+                            CodeHorizon
                         </Link>
                         <p className="text-sm text-text-secondary">Empowering learners worldwide.</p>
                     </div>
@@ -81,7 +81,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-surface-border/50 text-sm text-text-secondary text-center">
-                    <p>© 2026 OnlineGuru. All payments are secure and encrypted.</p>
+                    <p>© 2026 CodeHorizon. All payments are secure and encrypted.</p>
                 </div>
             </footer>
         </div>

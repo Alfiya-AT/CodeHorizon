@@ -83,7 +83,7 @@ export default function LoginPage() {
                         <div className="relative">
                             <div className="relative flex justify-center text-sm">
                                 <span className="px-2 bg-white text-gray-500">
-                                    New to Nexxi? <Link href="/auth/register" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</Link>
+                                    New to CodeHorizon? <Link href="/auth/register" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</Link>
                                 </span>
                             </div>
                         </div>

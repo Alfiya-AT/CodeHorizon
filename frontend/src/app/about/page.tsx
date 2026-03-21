@@ -11,7 +11,7 @@ export default function About() {
                         Empowering the <span className="text-brand-accent">Next Generation</span> of Engineers
                     </h1>
                     <p className="text-lg md:text-xl text-text-secondary leading-relaxed">
-                        OnlineGuru is committed to breaking down traditional learning barriers by providing production-grade standard curriculum, completely accessible and deeply focused on real-world outcomes.
+                        CodeHorizon is committed to breaking down traditional learning barriers by providing production-grade standard curriculum, completely accessible and deeply focused on real-world outcomes.
                     </p>
                 </div>
 
