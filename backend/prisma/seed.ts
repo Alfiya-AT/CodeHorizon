@@ -870,10 +870,11 @@ const courses = [
 async function main() {
     console.log('🌱 Seeding database with Real Top YouTube Dynamic Results...');
 
-    await prisma.videoProgress.deleteMany();
-    await prisma.enrollment.deleteMany();
-    await prisma.subscription.deleteMany();
-    await prisma.video.deleteMany();
+    const existingCount = await prisma.subject.count();
+    if (existingCount > 0) {
+        console.log('✅ Database is already seeded. Skipping safe-seed...');
+        return;
+    }
     await prisma.section.deleteMany();
     await prisma.subject.deleteMany();
 

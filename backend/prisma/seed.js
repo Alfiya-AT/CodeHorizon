@@ -926,33 +926,28 @@ var courses = [
 ];
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var _i, courses_1, course, sections, courseData, subject;
+        var existingCount, _i, courses_1, course, sections, courseData, subject;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     console.log('🌱 Seeding database with Real Top YouTube Dynamic Results...');
-                    return [4 /*yield*/, prisma.videoProgress.deleteMany()];
+                    return [4 /*yield*/, prisma.subject.count()];
                 case 1:
-                    _a.sent();
-                    return [4 /*yield*/, prisma.enrollment.deleteMany()];
+                    existingCount = _a.sent();
+                    if (existingCount > 0) {
+                        console.log('✅ Database is already seeded. Skipping safe-seed...');
+                        return [2 /*return*/];
+                    }
+                    return [4 /*yield*/, prisma.section.deleteMany()];
                 case 2:
                     _a.sent();
-                    return [4 /*yield*/, prisma.subscription.deleteMany()];
+                    return [4 /*yield*/, prisma.subject.deleteMany()];
                 case 3:
                     _a.sent();
-                    return [4 /*yield*/, prisma.video.deleteMany()];
-                case 4:
-                    _a.sent();
-                    return [4 /*yield*/, prisma.section.deleteMany()];
-                case 5:
-                    _a.sent();
-                    return [4 /*yield*/, prisma.subject.deleteMany()];
-                case 6:
-                    _a.sent();
                     _i = 0, courses_1 = courses;
-                    _a.label = 7;
-                case 7:
-                    if (!(_i < courses_1.length)) return [3 /*break*/, 10];
+                    _a.label = 4;
+                case 4:
+                    if (!(_i < courses_1.length)) return [3 /*break*/, 7];
                     course = courses_1[_i];
                     sections = course.sections, courseData = __rest(course, ["sections"]);
                     return [4 /*yield*/, prisma.subject.create({
@@ -972,14 +967,14 @@ function main() {
                                     }); })
                                 } })
                         })];
-                case 8:
+                case 5:
                     subject = _a.sent();
                     console.log("\u2705 ".concat(subject.title, " created with ").concat(sections.length, " sections."));
-                    _a.label = 9;
-                case 9:
+                    _a.label = 6;
+                case 6:
                     _i++;
-                    return [3 /*break*/, 7];
-                case 10:
+                    return [3 /*break*/, 4];
+                case 7:
                     console.log('🎉 Seeding complete!');
                     return [2 /*return*/];
             }
